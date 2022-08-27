@@ -1,0 +1,16 @@
+.mainAbt{
+     height: 40rem;
+     /* color:aliceblue; */
+}
+
+.abtUs{
+    /* object-fit: fill; */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYprTBsImF4y0zXaYsU8nzFpDQweUWNsAzSA&usqp=CAU');
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.5; */
+
+}
+

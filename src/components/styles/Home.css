@@ -1,0 +1,13 @@
+.seasonsal{
+    height: 800px;
+}
+.seasonimg{
+    height: 100%;
+    width: 60%;
+}
+
+@media only screen and (max-width: 600px) {
+    .seasonsal,.seasonimg{
+      height: 100%;
+    }
+  }

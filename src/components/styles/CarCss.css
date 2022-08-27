@@ -1,0 +1,7 @@
+.carText{
+    position: abosulte;
+    z-index: -1;
+    display: flex;
+    mix-blend-mode: overlay;
+    text-align: center;
+}
