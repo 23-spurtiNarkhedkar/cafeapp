@@ -1,9 +1,9 @@
-.mainAbt{
-     height: 40rem;
-     /* color:aliceblue; */
+.mainAbt {
+    height: 40rem;
+    /* color:aliceblue; */
 }
 
-.abtUs{
+.abtUs {
     /* object-fit: fill; */
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYprTBsImF4y0zXaYsU8nzFpDQweUWNsAzSA&usqp=CAU');
     height: 70%;
@@ -11,6 +11,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     /* opacity: 0.5; */
-
 }
 
+
+@media screen and (max-width: 600px) {
+    .mainAbt {
+        height: 25em;
+        border-image-width: 100%;
+    }
+}

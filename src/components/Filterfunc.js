@@ -5,28 +5,18 @@ import FilterFuncData from './FilterFuncData';
 function Filterfunc() {
     const [data, setData] = useState(FilterFuncData);
 
-    // const FilteredList = (curItem) => {
-    //     const res = FilterFuncData.filter((currData) => {
-    //         return currData.category === curItem;
-    //     });  
-    //     setData(res);
-    // }
-
     const FilteredList = ((currItem) => {
         const res = FilterFuncData.filter((currData) => {
             return currData.category === currItem;
         });
         setData(res);
     })
-    // useEffect(()=>{
-    //     setCat(categories);
-    // },[])
 
     const [search, setSearch] = useState("");   
     return (
         <div>
-            <Container>
-                <input type='text' placeholder='search' onChange={(event) => { setSearch(event.target.value); }} />
+            <Container className='mt-4'>
+                <input className='mx-auto d-block' type='text' placeholder='search' onChange={(event) => { setSearch(event.target.value); }} />
                 {data.filter((val) => {
                     if (search == "") {
                         return val;
@@ -42,7 +32,7 @@ function Filterfunc() {
                         </div>
                     )
                 })}
-                <Row>
+                <Row className='my-3'>
                     <Col >
                         <Button onClick={() => setData(FilterFuncData)}> All </Button>
                         </Col>

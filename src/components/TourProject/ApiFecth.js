@@ -27,25 +27,22 @@ function ApiFecth() {
             <h1>name</h1>
             <div className='text-center'>
                 <Row>
-
-                    {/* {user.map((ele)=>{
-                        return(
-                            <Col key={ele.id}>
-                            <h1> {ele.name}</h1>
-                            <h3>{ele.clg}</h3>
-                            <h3>{ele.age}</h3>
+                    {user.map((ele) => {
+                        return (
+                            <Col md={4} key={ele.id} >
+                                <Card style={{ height:'10rem'}} className=" my-2">
+                                    <Row className='m-2'>
+                                        <Col class="mx-auto d-block">
+                                            <img class="rounded mx-auto d-block" src={ele.url} style={{ width: '100px' }} />
+                                        </Col>
+                                        <Col>
+                                            <h5>{ele.title}</h5>
+                                        </Col>
+                                    </Row>
+                                </Card>
                             </Col>
                         )
-                    })} */}
-                        {user.map((ele) => {
-                            return (
-                                <Col md={4} key={ele.id}>
-                                    <h3>{ele.albumID}</h3>
-                                    <h3>{ele.title}</h3>
-                                    <img src={ele.url}  style={{width:'100px'}}/>
-                                </Col>
-                            )
-                        })}
+                    })}
                 </Row>
             </div>
         </div>
