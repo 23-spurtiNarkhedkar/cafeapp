@@ -25,7 +25,7 @@ function App() {
       {/* <LifeCycle/> */}
       {/* <Log/> */}
       {/* <UserApi /> */}
-      {/* <ApiFecth/> */}
+      <ApiFecth/>
       <BrowserRouter>
         <Routes>
           <Route exact path='/' element={<HomePage />} />
