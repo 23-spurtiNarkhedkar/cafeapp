@@ -14,7 +14,6 @@ function App() {
   return (
     <>
       <NavBar />
-      <ApiFecth />
       <BrowserRouter>
         <Routes>
           <Route exact path='/' element={<HomePage />} />
@@ -24,7 +23,6 @@ function App() {
           <Route exact path='/fetchphoto' element={<ApiFecth />} />
           <Route exact path='/contactUs' element={<ContactUs />} />
           <Route exact path='/search' element={<Filterfunc />} />
-          {/* <Route exact path='/log' element={<Log />} /> */}
         </Routes>
       </BrowserRouter>
     </>
